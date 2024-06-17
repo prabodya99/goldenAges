@@ -1,0 +1,259 @@
+* {
+	box-sizing: border-box;
+    margin: 0 ;
+    font-family: 'Lucida Sans Typewriter';
+
+}
+header{
+	background-color: black;
+	font-family: 'Lucida Sans Typewriter';
+    text-decoration: none;
+    margin: 10px auto; 
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo{
+	line-height: 100px;
+	margin: 0 20px;
+	float: left;
+	letter-spacing: 5px;
+	font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.logo a{
+	text-decoration: none;
+	color:#F71A5C ;
+}
+
+nav{
+	margin: 0 40px;
+	float: right;
+	line-height: 100px;
+	letter-spacing: 3px;
+	color: white;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+color: #F71A5C;
+}
+
+.appoinment{
+	position: relative;
+	min-height: 90vh;
+	padding-top: 100px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(gallery/appoinment.jpg);
+	height: 100%;
+	background-size: cover;
+	line-height: 30px;
+}
+
+.appoinment .content-box{
+    max-width: 970px;
+    text-align: left;
+}
+
+.appoinment .content-box .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .text{
+	width: 60%;
+	text-align: left;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .text h2{
+	color:white ;
+	font-size: 30px;
+}
+
+.container .text li{
+ font-size: 20px;
+}
+
+.form{
+	width: 40%;
+	padding: 20px;
+	background-color: white;
+	display: block;
+	color: black;
+}
+
+.form h2{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.form .box-form{
+	position: relative;
+	width: 100%;
+	padding-top: 25px;
+}
+
+.form .box-form input,textarea{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: solid 1px; black;
+	outline: none;
+	resize: none;
+}
+
+.form .box-form input[type="date"]{
+	width: 50%;
+	float: right;
+	border: 1px solid;
+}
+
+select{
+	padding: 10px;
+	margin-top: 25px;
+}
+
+.form .box-form span{
+	position: absolute;
+	left: 0;
+	padding: 5px;
+	transition: 0.5s;
+	color: black;
+}
+
+.form .box-form textarea:focus ~ span,
+.form .box-form textarea:valid ~ span,
+.form .box-form input:focus ~ span,
+.form .box-form input:valid ~ span{
+	color:#F71A5C ;
+	font-size: 15px;
+	transform: translateY(-20px);
+}
+
+.form .box-form input[type="submit"]{
+	width: 100px;
+	background-color: #F71A5C;
+	color: white;
+	padding: 15px;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* footer */
+footer{
+    background-color: black;
+}
+
+footer .btn{
+	background-color:#F71A5C ;
+	line-height: 95px;
+	text-align: center;
+	justify-items: center;
+}
+
+footer .btn a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 20px;
+    background-color:rgba(0, 0, 0, 0.3) ;
+}
+
+footer .btn a:hover{
+	background-color: white;
+	color:#F71A5C  ;
+}
+
+.content {
+	letter-spacing: 5px;
+    width: 100%;
+	display: flex;
+}
+
+.content .footer-left{
+	width: 33.33%;
+	color:#F71A5C ;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 40px;
+}
+
+.content .footer-left a{
+	text-decoration: none;
+	color: #F71A5C;
+	border: solid  #F71A5C;
+	padding: 6px;
+}
+
+.content .footer-left a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.content .footer-right{
+	width: 33.33%;
+	color:#F71A5C ;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 40px;
+}
+
+.content .footer-right a{
+	text-decoration: none;
+	color:#F71A5C  ;
+}
+
+.content .footer-right a:hover{
+	color: white;
+}
+
+.content .footer-center{
+	color:#F71A5C ;
+    font-size: 20px;
+    padding: 40px;
+    width: 33.33%;
+    line-height: 30px;
+}
+
+footer .social{
+	text-align: center;
+	padding: 15px 0 20px 0;
+}
+
+footer .social a{
+    font-size: 23px;
+    border: solid #F71A5C;
+    color: #F71A5C;
+    padding: 11px ;
+}
+
+ footer .social a:hover{
+    background-color:white ;
+    border: none;
+    color: black;	
+}
+
+footer .copy{
+	font-size: 20px;
+	color:#F71A5C ;
+	text-align: center;
+	text-align: center;
+}
+/* end of footer */

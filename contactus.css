@@ -1,0 +1,255 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Lucida Sans Typewriter';
+    padding: 0;
+    margin: 0;
+}
+body{
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(gallery/contact.jpg);
+	background-size: cover;
+}
+header{
+	background-color: black;
+	font-family: 'Lucida Sans Typewriter';
+    text-decoration: none;
+    margin: 10px auto; 
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo{
+	line-height: 100px;
+	margin: 0 20px;
+	float: left;
+	letter-spacing: 5px;
+	font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.logo a{
+	text-decoration: none;
+	color:#F71A5C ;
+}
+
+nav{
+	margin: 0 40px;
+	float: right;
+	line-height: 100px;
+	letter-spacing: 3px;
+	color: white;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+color: #F71A5C;
+}
+
+.contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	line-height: 30px;
+}
+
+.contact h1{
+	padding-top: 70px;
+	font-size: 80px;
+	font-weight: 800;
+}
+.pulsate{
+	animation: pulsate 6s ease-in-out;
+	animation-iteration-count: infinite;
+	opacity: 0.5;
+}
+
+@keyframes pulsate{
+	0%{
+		opacity: 0.5;
+	}
+	50%{
+		opacity: 1;
+		color: #F71A5C;
+	}
+	100%{
+		opacity: 0.5;
+	}
+}
+
+.contact .content-box{
+    max-width: 970px;
+    text-align: left;
+}
+
+.contact .content-box p{
+    font-weight: 300;
+}
+
+.contact .content-box .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .text{
+	width: 40%;
+	text-align: left;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+ .container .text .social a{
+ 	font-size: 25px;
+ 	background-color: #F71A5C;
+	padding: 10px;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+ }
+
+.container .text h2{
+	color:white ;
+	padding-bottom: 10px;
+}
+
+.container .text a{
+	text-decoration: none;
+	color: white;
+}
+
+.container .text a:hover{
+	color:#F71A5C ;
+}
+
+/* contact form */
+.form{
+	width: 40%;
+	padding: 40px;
+	background-color: white;
+	display: block;
+	color: black;
+}
+
+.form h2{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.form .box-form{
+	position: relative;
+	width: 100%;
+	padding-top: 25px;
+}
+
+.form .box-form input,textarea{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: solid 1px; black;
+	outline: none;
+	resize: none;
+}
+
+.form .box-form span{
+	position: absolute;
+	left: 0;
+	padding: 5px;
+	transition: 0.5s;
+	color: black;
+}
+
+.form .box-form textarea:focus ~ span,
+.form .box-form textarea:valid ~ span,
+.form .box-form input:focus ~ span,
+.form .box-form input:valid ~ span{
+	color:#F71A5C ;
+	font-size: 15px;
+	transform: translateY(-20px);
+}
+
+.form .box-form input[type="submit"]{
+	width: 100px;
+	background-color: #F71A5C;
+	color: white;
+	padding: 15px;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+@media (max-width: 900px){
+	.contact{
+		padding: 40px;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.container .text{
+		margin-bottom: 40px;
+	}
+
+}
+
+.location{
+	display: flex;
+	width: 50%;
+	margin: auto;
+	padding: 80px;
+}
+
+.location iframe {
+	width: 100%;
+
+}
+
+/* footer */
+footer{
+    background-color: black;
+}
+
+footer .btn{
+	background-color:#F71A5C ;
+	line-height: 95px;
+	text-align: center;
+	justify-items: center;
+}
+
+footer .btn a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 20px;
+    background-color:rgba(0, 0, 0, 0.3) ;
+	}
+
+footer .btn a:hover{
+	background-color: white;
+	color:#F71A5C  ;
+}
+
+.content {
+	letter-spacing: 5px;
+    width: 100%;
+	display: flex;
+}
+
+footer .copy{
+	font-size:20px;
+	color:black ;
+	text-align: center;
+	text-align: center;
+}
+/* end of footer */
